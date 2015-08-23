@@ -2,7 +2,7 @@
 Generate random characters or number easily
 
 ### Usage
-```
+```python
 from randoms import Randoms
 
 # give me a random integer with a length of 4
