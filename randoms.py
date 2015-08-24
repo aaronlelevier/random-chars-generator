@@ -39,5 +39,5 @@ class Randoms(object):
     def integer(self, length=None):
         return int(self._generate(string.digits, length))
 
-    def float(self, length=None):
-        return float(self._generate(string.digits, length))        
+    def float(self, length=None, precision=0):
+        return float(self._generate(string.digits, length)) / float('1'+'0'*precision)

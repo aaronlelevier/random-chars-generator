@@ -34,6 +34,11 @@ class RandomsTests(unittest.TestCase):
         f = self.r.float()
         self.assertIsInstance(f, float)
 
+    def test_float_precision(self):
+        precision = 4
+        f = self.r.float(precision=precision)
+        self.assertEqual(str(f), "{:.4f}".format(f))
+
     def test_length(self):
         self.assertEqual(len(self.r.letters(20)), 20)
 
