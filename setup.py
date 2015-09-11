@@ -1,19 +1,10 @@
-import os
-from setuptools import setup, find_packages
+#!/usr/bin/env python
 
+from distutils.core import setup
 
-setup(
-    name='random-chars-generator',
-    version='0.1',
-    author='Aaron Lelevier',
-    author_email='pyaaron@gmail.com',
-    description='Random genrator for differnt types in Python',
-    long_description=read('README.md'),
-    url='https://github.com/aronysidoro/random-chars-generator',
-    license='MIT',
-    keywords=['django'],
-    platforms=['OS Independent'],
-    classifiers=CLASSIFIERS,
-    packages=['randoms'],
-    zip_safe=False,
-)
+setup(name='random-chars-generator',
+      version='1.0',
+      description='Generate random primative types for testing',
+      author='Aaron Lelevier',
+      author_email='pyaaron@gmail.com'
+     )
